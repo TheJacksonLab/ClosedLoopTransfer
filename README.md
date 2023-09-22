@@ -12,7 +12,7 @@ Python Packages:
 Standard installation of python packages.
 Bayesian Optimizer (Gryffin) was installed and used as described in https://doi.org/10.1063/5.0048164
 
-3. Demo and 4. Instructions for Use
+3. Instructions for Use:
 All scripts are saved in separate folders with their appropriate data set (saved as .csv) to reproduce the analysis in the paper.
 
 ## All4FeatureModels ##
