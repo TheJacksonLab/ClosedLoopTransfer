@@ -9,7 +9,7 @@ Python Packages:
 - sklearn 1.1.2
 
 2. Installation Guide:
-Standard installation of python packages (5 minutes)
+Standard installation of python packages.
 Bayesian Optimizer (Gryffin) was installed and used as described in https://doi.org/10.1063/5.0048164
 
 3. Demo and 4. Instructions for Use
