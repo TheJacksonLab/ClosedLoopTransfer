@@ -16,39 +16,49 @@ Bayesian Optimizer (Gryffin) was installed and used as described in https://doi.
 All scripts are saved in separate folders with their appropriate data set (saved as .csv) to reproduce the analysis in the paper.
 
 ## All4FeatureModels ##
-#Instructions:
+Instructions:
 Select which features you want to run all 4-feature combinations over by removing extra features from OligomerFeatures.csv. Run SVR_Best4Feats.py
-#Expected Output:
+
+Expected Output:
 A csv file "FourfeatureModels.csv" that contains all the model IDs, 4 features, LOOV_R2, and regularization strength. All 4 feature models with LOOV R2 > 0.70 derived from pairwise combinations of feature sets (see text) is included.
 A png file graphing the predicted T80 values vs Actual T80 values of the best 4-feature model with its R2 and C_reg.
-#Expected run time:
+
+Expected run time:
 < 1 minute for a small set of 10 features.
-#Reproduction:
+
+Reproduction:
 Run SVR_Best4Feats.py on all pair-wise combinations of feature sets to identify the most common features (e.g. Figure S9) and the best set of features
 
 ## Best4FeatureModel ##
-#Instructions:
+Instructions:
 The best 4-feature model's features are saved in OligomerFeatures.csv. To predict T80 values for all molecules, run SVR_Predict.py
-#Expected Output:
+
+Expected Output:
 All Predicted T80s will be listed in PredictedT80.csv. The Predicted T80 will be plotted against the Actual T80 values (not LOOV) in Performance_SVR_RBF.png along with the R2 and Cr. The permutation importance of each feature will be plotted in PermImp.png
-#Expected run time:
+
+Expected run time:
 < 1 minute
 
 ## DownSelect ##
-#Instructions:
+Instructions:
 To identify a reduced set of predictive features from a larger dataset, identify the columns of the features in your larger dataset from OligomerFeatures_PreValidations_TSO10.csv (the script can handle two contiguous blocks of features). 'Run SVR_PermuImp.py A B C D', where A and C are numbers that correspond to the start of the two contiguous blocks, and B and D are numbers that correspond to the end of the two contiguous blocks. The script requires A B C D to all be present (you can use 0 0 for C D if you only want one contiguous block). Running run Downselect.bash will run all single & combinations of feature sets in separate folders ('BTOS' = Basic + TOS10, 'BT' = Basic + TDOS etc.)
-#Expected Output:
+
+Expected Output:
 A series of PermImpX.png files showing the permutation importance for each model (X) as low-importance features are eliminated.
 A series of Performance_SVR_RBFX.png files showing LOOV predictions of each model.A file, FeatureElimination.csv, recording the LOOV R2, Cr, and least important feature (deleted) for each model.
-#Expected run time:
+
+Expected run time:
 < 1 minute for a set of 10 features.
-#Reproduction: run Downselect.bash
+
+Reproduction: run Downselect.bash
 
 ## SOMetric ##
-#Instructions:
+Instructions:
 To retrain the SO predictions, run SOMetric.py.
-#Expected Output:
+
+Expected Output:
 Predictions.png showing the plot of Predicted to Actual SO. R2_vs_Shift.png, showing the dependence of the SO metric's R2 on the value of E_shift (see text). All2200_SO_values.csv listing all molecules and their predicted SO values.
-#Expected runtime:
+
+Expected runtime:
 < 1 minute
 
