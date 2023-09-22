@@ -7,7 +7,6 @@ Python Packages:
 - numpy 1.21.5
 - scipy 1.9.0
 - sklearn 1.1.2
-All python scripts were run on macOS Ventura 13.6
 
 2. Installation Guide:
 Standard installation of python packages (5 minutes)
@@ -41,5 +40,16 @@ To identify a reduced set of predictive features from a larger dataset, identify
 Expected Output:
 A series of PermImpX.png files showing the permutation importance for each model (X) as low-importance features are eliminated.
 A series of Performance_SVR_RBFX.png files showing LOOV predictions of each model.A file, FeatureElimination.csv, recording the LOOV R2, Cr, and least important feature (deleted) for each model.
+Expected run time:
+< 1 minute for a set of 10 features.
 Reproduction: run Downselect.bash
+
+## SOMetric ##
+Instructions:
+To retrain the SO predictions, run SOMetric.py.
+Expected Output:
+Predictions.png showing the plot of Predicted to Actual SO. R2_vs_Shift.png, showing the dependence of the SO metric's R2 on the value of E_shift (see text). All2200_SO_values.csv listing all molecules and their predicted SO values.
+Expected runtime:
+< 1 minute
+Reproduction: run SOMetric.py
 
