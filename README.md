@@ -27,7 +27,7 @@ Expected run time:
 < 1 minute for a small set of 10 features.
 
 Reproduction:
-Run SVR_Best4Feats.py on all pair-wise combinations of feature sets to identify the most common features (e.g. Figure S9) and the best set of features
+Run SVR_Best4Feats.py on all pair-wise combinations of feature sets to identify the most common features (e.g. Figure S12) and the best set of features
 
 ## Best4FeatureModel ##
 Instructions:
