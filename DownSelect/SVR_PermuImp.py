@@ -1,5 +1,5 @@
 #
-# Copyright <year> The Board of Trustees of the University of Illinois. All Rights Reserved.
+# Copyright 2023 The Board of Trustees of the University of Illinois. All Rights Reserved.
 # Licensed under the terms of the MIT license (the "License")
 # The License is included in the distribution as License.txt file.
 # You may not use this file except in compliance with the License. 
